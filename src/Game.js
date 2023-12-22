@@ -27,7 +27,7 @@ class Game {
     this.track[this.hero.position] = this.hero.skin;
   }
 
-  check() {
+  check() {  //если герой и враг сопрекаснулись то смерть герою
     if (this.hero.position === this.enemy.position) {
       this.hero.die();
     }
